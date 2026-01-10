@@ -1,0 +1,758 @@
+Compliance is the process of adhering to internal standards and external regulations and enables organizations to avoid fines and security breaches.
+
+Security frameworks are guidelines used for building plans to help mitigate risks and threats to data and privacy.
+
+Security controls are safeguards designed to reduce specific security risks. They are used with security frameworks to establish a strong security posture.
+
+Security posture is an organization’s ability to manage its defense of critical assets and data and react to change. A strong security posture leads to lower risk for the organization.
+
+A threat actor, or malicious attacker, is any person or group who presents a security risk. This risk can relate to computers, applications, networks, and data.
+
+An internal threat can be a current or former employee, an external vendor, or a trusted partner who poses a security risk. At times, an internal threat is accidental. For example, an employee who accidentally clicks on a malicious email link would be considered an accidental threat. Other times, the internal threat actor intentionally engages in risky activities, such as unauthorized data access.
+
+Network security is the practice of keeping an organization's network infrastructure secure from unauthorized access. This includes data, services, systems, and devices that are stored in an organization’s network.
+
+Cloud security is the process of ensuring that assets stored in the cloud are properly configured, or set up correctly, and access to those assets is limited to authorized users. The cloud is a network made up of a collection of servers or computers that store resources and data in remote physical locations known as data centers that can be accessed via the internet. Cloud security is a growing subfield of cybersecurity that specifically focuses on the protection of data, applications, and infrastructure in the cloud.
+
+Programming is a process that can be used to create a specific set of instructions for a computer to execute tasks. These tasks can include:
+
+Automation of repetitive tasks (e.g., searching a list of malicious domains)
+
+Reviewing web traffic 
+
+Alerting suspicious activity
+
+
+Course 3 !!! istrazi vise tcp/ip osi modelu !!!
+Module 1:
+	network groups of connected devices
+	ISP internet service provider
+	CSP cloud service provider
+	LAN local area network - small area connections
+	WAN wide area network - large area like city, country
+	HUB device that broadcasts information to all devices on network
+	SWITCH connection between two devices 
+	ROUTER network device that connects multiple devices together
+	MODEM connects router to the internet and brings internet thru LAN
+	VIRTUALIZATION TOOLS software that preform network operations
+	
+	TCP transmission control protocol between two devices
+	IP internet protocol
+	port 25 email
+	port 443 secure internet communications	
+	port 20 large file transfers
+	
+	TCP/IP model framework used to visualize how data is organized and transmitted across the network
+	4 layers
+	1. network access layer
+	2. internet layer
+	3. transport layer
+	4. application layer
+	
+Module 2:
+	Network protocols - set of rules to describe delivery and structure data
+	Transmission control protocol TCP internet com protocol connecting two devices; only two devices
+	Address resolution protocol ARP - determines mac address of next router or device on the path
+	DNS Domain name system translates internet domain into IP address
+	
+	3 categories com protocol, managment, and security
+	
+	Firewall 
+	Stateful keeps track of information and filters out threats
+	Stateless based on predefined rules, and does not keep track of information
+	NGFWs even better than stateful firewall
+	
+	VPN changes ip address
+	Encapsulation protects data by wrapping sensitive data in other data packets
+	https protects information, vpn protects your privacy
+	
+	
+	Security zone network that protects internal network from internet
+	Network segmentation
+	Uncontrolled zone any network outside of org. control
+	Controled zone subnet that protects internal network from the uncontrolled zone
+	3 areas of controled zones:
+	1. demilitarized zone DMZ
+	2. internal network
+	3. restricted zone 
+	
+	Proxy server server that fulfilles requests of a client by forwarding them on to other servers
+	Forward proxy server regulates and restrics persons access to the internet
+	Reverse proxy server <--
+	Email proxy server filter spam email
+	
+	
+Module 3: secure against network intrusions, napadi, vrste napada, kako se odbraniti
+	DoS - denial of service: attack floods network or server with network traffic
+	DDos - distrubited denial of service - using multiple devices or servers in different locations to flood network
+	SYN (syncronize) flood attack type of DoS attack that simulates the first step of TCP handshake connection and floods a server with syn packets
+	ICMP - internet control message protocol used by devices to tell each other about data transmission errors across the network
+	ICMP FLOOD type of attack preformed by attacker repeatedly sending icmp packets to a network server
+	Ping of deatch type of dos attack caused when a hacker pings a system by sending oversized icmp packet bigger than 64kb
+	
+	consequences: financial; reputation; public safety
+	 
+	TCPDUMP is a command line network protocol analyzer
+	network protocol analyzers can also be used to:
+
+	Establish a baseline for network traffic patterns and network utilization metrics.
+
+	Detect and identify malicious traffic
+
+	Create customized alerts to send the right notifications when network issues or security threats arise.
+
+	Locate unauthorized instant messaging (IM), traffic, or wireless access points.
+
+	However, attackers can also use network protocol analyzers maliciously to gain information about a specific network. For example, attackers can capture data packets that contain sensitive information, such as account usernames and passwords.
+	
+	
+	Packet sniffing
+	Passive packet sniffing data packets are read in transit
+	Active packet sniffing data packets are manipulated in transit
+	Prevention from active packet sniffing use vpn, use https and dont use public wifi
+	
+	IP SPOOFING attacker changes source ip of a data packet to impersonate an authorized system and gain access to a network
+	1. on-path attack
+	2. replay attack
+	3. smurf attack
+	On-path attack hacker placed in the middle of connection to intercept or alter data in tranist 
+	Replay attack intercepts data packet in tranist and delays it or repeats it at another time
+	Smurf attack combination of ddos attack and ip spoofing - attacker sniffs an authorized users ip address and floods it with packets
+	
+	** configure firewall to reject ip address that are the same as local network **
+	
+	
+	
+Module 4: security hardening, os hardening, network hardening practices, cloud network hardening
+	On hardware, OS, networks, applications, cloud infrastructure, databases; 
+	sec. analysts patch updates and backups
+	request password change
+	configuration check, updating encryption standards
+	removing or disabling unused applications and services, unused ports, reduce access permission across devices and network
+	
+	SEC HARDENING
+	Security hardening process of strengthening system to reduce vulnerability and attack surface
+	Attack Surface - all vulnerabilities that can be exploited
+	Penetration test simulated attack that helps identify vulnerabilities across systems network, websites, applications and processes 
+	
+	
+	OS HARDENING 
+	Patch update software and os update; address sec. vulnerabilities
+	Baseline configuration(baseline image) - documented se of specifications within a system used for future builds releases and updates 
+	Hardware and software disposal 
+	Implementing strong password policy
+	Multi-factor authentitacion MFA verify identity in two or more ways password, keycard, fingerprint
+	
+	Brute Force Attack is a trail-and-error process of discovering private information.
+	Simple brute force attacks - trying to guess username and password
+	Dictionary attacks - use list of commonly used passwords and stolen credentials
+	
+	Assessing vulnerabilities testing network with VM or sandbox or simulate cybersecurity incident.
+	VMs..
+	Sandbox type of testing environment that allows execute of software and programs separate from your network. Can be stand-alone physical computer. Can be tricked to recognize when its vm or sandbox and be harmless until being on real network.
+	
+	Prevention's from brute force:
+	Salting and hashing converts infromation into unique value that can then be used to determine its integrity. Salting is adding ramdom characters to increase the length and complexity.
+	MFA and 2FA - mfa 2 or more 2fa only two forms of verification.
+	CAPTHCA and reCAPTCHA determine human from computer
+	Password policies strong complex etc, freqluenty new ones
+	
+	NETWORK SECURITY HARDENING
+	-port filtering
+	-network access privilege
+	-encryption
+	Some performed regularly some once and updated as needed
+	Regularly: firewall rules maintence
+		network log analysis
+		patch updates
+		server backups
+	Log record of events that recurs in network
+	Network log analysis process of examining network logs to identify events of interest
+	SIEM app that collects and analyzes log data
+	
+	Performed once:
+	port filtering - firewall function that blocks or allows certain port numbers to limit unwanted communication
+	network segmentation
+	all inf should be encrypted using latest enc. standards	
+	
+	Network security applications
+	firewall, ids, ips, siem
+	Firewall blocks or allows traffic based on a set of rules. Packet header inspected and allowed or denied based on its port number.
+	IDS intusion detection system only monitors system and alerts. Always placed behind firewall and before LAN.
+	IPS - intrusion prevention system monitors activity and takes action to stop the activity. Reports or blocks a specific sender or drops network packets that seem suspect. Posible false positives.
+	Full Packet Caprure Devices record and analyze all of the data that is ransmitted over network.
+	SIEM collects and analyzes log data, monitors citical activities. In real time. Analyze network log data from ids ips firewall vpn, proxies and dns logs.
+	
+	CLOUD NETWORK 
+	remote data centers via the internet
+	Identity access megagement IAM collection of processes and technologies that help organizations manage digital identities in their environment.
+	Cloud service providers CSP offer numberous applications and services for org. at low cost.
+	Zero-day attack is an exploit that was previously unknown. CSP know abou zero day before a traditional it organization does.
+	Visibility and tracking
+	Changing fast in the cloud
+	Shared responsibility model - this model delineates the security responsibilities of the CSP and the organization, ensuring clarity on who is responsible for securing different aspects of the cloud infrastructure.
+	
+	**Attack Surface: The attack surface refers to the total number of entry points into a network, which increases with the number of cloud services used, necessitating enhanced security measures.
+Shared Responsibility Model: This model delineates the security responsibilities of the CSP and the organization, ensuring clarity on who is responsible for securing different aspects of the cloud infrastructure.
+Identity Access Management (IAM): IAM is a collection of processes and technologies that help organizations manage digital identities and authorize user access to cloud resources.
+Zero-Day Attacks: Zero-day attacks exploit previously unknown vulnerabilities, and CSPs often have mechanisms to address these threats more swiftly than traditional IT organizations.
+Configuration: Proper configuration of cloud services is critical to maintaining security and compliance, especially during migrations, as misconfigurations can lead to vulnerabilities.**
+
+	Hypervisors: Software that abstracts the host's hardware from the operating environment, crucial for managing virtual machines in cloud services. virus ne bezi u main comp
+	Baselining cover how the cloud environment is configured and set up.
+	Cryptography 
+	Cryptography erasure erasing the encryption key for the encrypted data.
+	
+	
+	
+	
+Course 4: os and how they relate to apps and hardware; linux os, linux command line, sql to query database
+	Module 1: about os
+		Application program that preforms special task
+		user -> application -> os -> hardware (and back)
+		Bios basic input/output system
+		UEFI unified externsible firmware interface contains loading instructions for the computer and replaces bios on more modern systems.
+		User interface program that allows user to control os
+		GUI graphical user interface icons/visual
+		CLI command-line interface text based user interface that uses commands to interact with pc
+		
+		
+	Module 2: linux
+		components of linux:
+		user - person interacting with person
+		applications - program that performs specific task 
+		shell - command line interpreter
+		filesystem hierarchy standard (FHS) - components of linux that organizes data 	 
+		kernel - component of linux OS that manages processes and memory
+		hardware - physical components
+		Digital forensics - collecting and analyzing data to determine what happened after attack
+		
+	Module 3: linux commands
+		navigation: cd, ls, pwd, cat, head(prints 10 lines, or head -n 5 note.txt), less(by pages), tail
+		
+		filtering: 
+			grep searches file, and returns lines containing specified string grep users note.txt
+			grep - grep OS updates.txt 
+			find - -name;-iname; -mtime(days); -mmin(minutes)
+			/home/analyst/projects -name "*log*"
+			find /home/analyst/projects -mtime -3 (3 days; +1 more than one day, -1 less than day)
+		
+		managing directories and files:
+			mkdir, rmdir, touch, rm
+		
+		permisions:
+			read, write, execute
+			types of user: user, group, other
+			 
+			drwxrwxrwx - full permision for the user group
+			 
+			d = directory
+			 
+			ls -l = display permissions 
+			ls -la = -||- and hidden files
+			 
+			change permissions:
+			chmod(change mod) - changes permissions on files and directories
+			 
+			chmod u-r,g+w test.txt = minus removes, + adds permissions
+			 
+		deleting and adding users:
+			root user - user with elevated privilages to modify the system
+			useradd - adds user to the system(only root users with sudo privilages can use add command)
+			userdel - removes user from the system, if used with -r deletes all files of deleted user
+			usermod - modifies existing user account
+			-g: adds to group
+			-G: adds user to additional groups, supplemental or secondary groups, can be used with -a which appends user to an existing group
+			-d: Changes the user’s home directory.
+			-l: Changes the user’s login name.
+			-L: Locks the account so the user can’t log in.
+			chown - changes owndership of a file or directory. To change group ownership user ":" sudo chown :security test.tx
+			
+	
+	Module 4: DATABASES AND SQL
+		Database - organized collection of data or information
+		-accessed by multiple ppl
+		-store massive amount of data
+		-preform complex tasks while accessing data
+		Relational database - structured, containing tables that are related to each other
+		Primary key - a column where every row has a unique entry - no duplicates, no null or empty values
+		Foreign key - a column in a table that is a primary key in another table - can have empty values and duplicates
+		
+		SQL structured query language - used to crate, interact with and request information from a database
+		Query - a request for data from a database table or a combination of tables
+		
+		SELECT - indicates which columns to return
+		FROM - indicates which table to query
+		ORDER BY - specify a column to base the sort on (DESC for descending order)
+		
+	filtering in sql:
+		WHERE country = 'USA':
+		WHERE country LIKE 'US%'; (% wildcard for patterns)
+		
+	common data types: string, numeric and date & time WHERE hiredate BETWEEN '2002-01-01' AND '2003-01-01';
+	AND OR NOT
+	inner joins outer joins, right joing, left join, full outer join
+	count, sum, avg
+	
+	
+	
+Course 5: Module 1 - assets, threats
+		security risk planning: assets, threats, vulnerabilities
+		risk - anything that can impact confidentiality, integrity or availability of an asset
+		threat - anything that negatively impact asset
+		vulnerability - weakness that can be exploited by threat 
+		threats - intentional and unintentional
+		vulnerabilities - technical or human
+		
+		asset inventory - assets that need to be protected
+		asset classification - how important it is to an organization	
+ 		asset classification levels:
+ 			public - that can be shared with anyone 
+ 			internal-only - shared only inside organization
+ 			confidential - limited to specific users
+ 			restricted - highly sensitive/need-to-know
+
+
+		States of data: in use, in transit, at rest
+		data in use - data being accessed by one or more users
+		data in transit - data traveling from one point to another
+		data in rest - data not being accessed currently 
+		information security(InfoSec) - keeping all above away from unauthorized users
+		
+		There are three main categories of cloud-based services:
+		Software as a service (SaaS) - front end applications 
+		Platform as a service (PaaS) - backend
+		Infrastructure as a service (IaaS) - remote access to back-end systems
+
+
+		Types of risk categories: damage, disclosure, loss of information
+		Elements of a security plan:
+			Policies - set of rules that reduces risk and protects information
+			Standards - references that inform how to set policies 
+			Procedures - instructions to perform a specific security task
+
+	Compliance - process of adhering to internal standards and external regulations
+	Regulations - rules set by government or other authority to control the way something is done
+	
+	NIST  Cybersecurity framework (CSF)
+	nist csf components: core, tiers, profiles
+		CORE - desired outcomes: identify, protect, detect, respond, recover(and govern - added in feb.2024)
+		TIERS - way to measure performance 1-4
+		PROFILES - current state of security plan
+		
+
+Course 5: Module 2 protecting assets
+
+	Security controls - safeguards to reduce specific security risk
+	Principle of least privilege - only minimal access to complete a task	
+	Data owner - The person that decides about their information
+	Data custodian - Anything or anyone who's responsible for information
+	Data steward - someone who implements data governance policies 
+	(three above are data governance)
+	Types of accounts: guest, user, service and privileged accounts
+	Approaches to auditing user accounts: usage, privilege, account change audits.
+	 
+	 Information privacy - protection from unauthorized access and distribution of data
+	 Information security - keeping data in all states away from unauthorized users
+	 Privacy is about providing ppl with control over their information.
+	 Security is about protecting ppls choices and information safe
+	 
+	 3 most influential industry regulations:
+	 GDPR - General data protection regulation
+	 PCI DSS - Payment card industry data security standard
+	 HIPAA - health insurance portability and accountability act
+	 
+	 Security audit - review of security controls, polices and procedures against a set of expectations
+	 Security assessment -  check to determine how resilient current security is
+	 
+	 
+	 Chiper - algorithm that encrypts information
+	 Cryptographic key - mechanism that decrypts ciphertext
+	 Public key infrastructure(PKI) - encryption framework that secures the exchange of information online
+	 PKI process:
+	 1. Exchange of encrypted information thru asymmetric or symmetric or both
+	 	Asymmetric encryption - use of public and private key pair for enc. and dec. of data
+	 	Symmetric encryption - use single secret ket to exchange information
+	2. Establish trust using a system of digital certificates
+		Digital certificate - a file that verifies the identity of a public key holder
+
+	Advanced Encryption Standard (AES) - modern symmetric enc. takes 128 192 or 256 bits.
+	Rivest Shamir Adleman RSA - 1024 2048 4096 used for highy sensetive data
+	Digital Signature Algorithm DSA - 2048 bits
+	
+	Generating keys - with OpenSSL key generator
+	
+	Hash function - algorithm that produces a code that cant be decrypted
+	
+	Access controls - security controls that manage acces, authorization, and accountability of information
+	AAA framework: authentication, authorization, accounting
+	Authentication - *providing identity -who are u
+		Factors of authentication:
+			1.Knowledge - password i sec question
+			2.Ownership - something the user possesses
+			3.Characteristic: fingerprint, face scan
+		Single sign-on(SSO) - technology that combines several different logins into one
+		MFA ...
+	
+	Authorization: *defining permissions -what can u do
+		least privilege, separation of duties
+		https..
+		OAuth - open-standard authorization protocol that shares designated access between aplications
+		API token - small block of encrypted code that contains information about a user
+		
+	Accounting:  *tracking usage -what did u do
+		Session - sequence of network HTTP basic auth requests and responses associated with the same user(like visiting web site)
+		Session ID - unique token that identifies a user and their device while accessing the system
+		Session cookie - token websites use to validate how long that session should last
+		Session hijacking - hacker obtaining users session ID
+		
+		
+		
+Module 3: vulnerabilities in systems
+	Exploit - taking advantage of a vulnerability
+	Vulnerability management - process of finding and patching vulnerabilities
+		4 steps:
+			1. identify vulnerabilities
+			2. consider potential exploits
+			3. prepare defenses against threats
+			4. evaluate those defenses
+	
+	Defense in depth - layered approach to vulnerability management that reduces risk
+		1. perimeter layer(user names and passwords, auth)
+		2. network layer(network firewalls and others)
+		3. endpoint layer(devices that have access to network)
+		4. application layer(interfaces used to interact with users)
+		5. data layer(critical data that must be protected)
+		
+	Exposure - mistake that can be exploited by a thraet
+	
+	CVE list - common vulnerabilities and exposures list
+	MITRE - collection of non-profit research and development centers
+	CNA - cve numbering authority - an organization that volunteers to analyze and distribute information on eligible CVEs
+	CVE list criteria:
+		1. Independent of other issues
+		2. Recognized as a potential security risk
+		3. Submitted with supporting evidence
+		4. Only affect one codebase
+		
+	CVSS - Common vulnerabilities scoring system - measurement system that scores the severity of a vulnerability 
+	
+	OWASP - Open worldwide application security project - security on web
+	OSNIT - Open-source intelligence - collection and analysis of information
+	
+	Vulnerability assessment - the internal review process of an organizations security system
+		1: Identificaiton
+		2. Vulnerability analysis
+		3. Risk assessment 
+		4. Remediation
+		
+	Penetration testing:
+		Open-box testing - tester has same privileged acess that an internal developer would have.
+		Closed-box testing - little to no access to internal system
+		Partial knowledge testing - limited access and knowledge of an internal systems
+		
+		
+	Attack surface - potential vulnerabilities that a treat actor could exploit
+	Attack vectors - pathways attackers use to penetrate security defenses: social media, email, usb
+	
+	
+Module 4: threats to asset security
+	whats in module: social engineering tactics, malware, web-based exploits, threat modeling process
+	
+	Stages of social engineering: 
+		1. prepare
+		2. establish trust 
+		3. use persuasion tactics
+		4. disconnect from the target
+	
+	Preventing social engineering: 
+		- Implementing managerial controls(policies, standards, procedures)
+		- Staying informed of trends
+		- Sharing your knowledge with others
+	Common types of social engineering:
+		- Baiting (finding usb and plugging in device)
+		- Phishing
+		- Quid pro quo (believing you won something)
+		- Tailgating (following person into restricted area)
+		- Watering hole (targeting website visited by specific group of users)
+		
+	Phishing:
+		Phishing kit - Collection of software tools needed to launch a phishing campaign. 
+		Tools:
+			- Malicious attachments
+			- Fake data-collection forms/survey
+			- Fraudulent web links
+	Smishing - Text messages to obtain sensitive information	
+	Vishing - Electronic voice communication
+	Spear phishing - Subset of email phishing; accountants of small business
+	Whailing - High-ranking executives of an organization	
+	
+	Phishing security measures:
+		- Anti-phishing policies
+		- Employee training resources
+		- Email filtering
+		- Intrusion prevention systems
+		
+	Malware(Malicious Software) - Software designed to harm devices or networks
+	Types of malware :
+		Virus - Interfere with pc operations and cause damage to data and software; has to be activated by user
+		Worm - can duplicate and spread itself on its own
+		Trojan - Malware that looks like a legitimate file or program
+		Ransomware - Encrypts data and demand payment to restore access
+		Spyware - Gather and sell information without consent
+		Adware - Unwanted ads
+		Scareware - Fake warnings
+		Fileless malware - Already in pc; resides in memory
+		Rootkits
+		Botnet - Multiple pc's infected and controlled by single actor.
+		Cryptojacking - Software to illegally mine cryprocurrencies
+	
+	WEB
+	Web-based exploits - Malicious code or behavior that's used to take advantage of coding flaws in a web application
+	Injection attack - Malicious code inserted into a vulnerable application
+	Cross-site scripting (XSS) - An injection attack that inserts code into a vulnerable website or web application(html and js)
+		3 types of cross-site scripting:
+			1. Reflected XSS attack - Malicious script is sent to a server and activated during the server's response 
+			2. Stored XSS attack - When malicious script is injected directly on the server
+			3. DOM-based XSS attack - Malicious script exists in the webpage a browser loads
+		
+	SQL injection - An attack that executes unexpected queries on a database
+	Prepared statement - Coding technique that executes SQL statements before passing them on to the database
+	Types of SQL injection:
+		In-band SQL injection - Uses the same communication channel
+		Out-of-band SQL injection - Uses different communication channel; needs certain features to be enabled on website to work
+		Inferential SQL injection - Interpret results by analyzing the behavior of the system.
+		Injection Prevention: 
+			- Prepared statements - executes SQL statements before passing them on to a database
+			- Input sanitization - Removes user input which could be interpreted as code
+			- Input validation - Ensures user input meets a system's expectations
+	
+	Threat modeling - Process of identifying assets, their vulnerabilities, and how each is
+exposed to threats. Steps:
+		1. Define the scope(Creating inventory of assets and classifying them)
+		2. Identify threats
+		3. Characterize the environment(putting you'r self in attackers mindset)
+		4. Analyze threats
+		5. Mitigate risks
+		6. Evaluate findings
+		
+	PASTA  (Process Attack Simulation and Threat Analysis) - popular threat modeling framework
+		1. Define business and security objectives (define the retaller wants their app to protect customer data)
+		2. Define the technical scope (identify application components that must be evaluated)
+		3. Decompose the application (identify existing controls that will protect user data)
+		4. Perform a threat analysis (gathering intelligence on types of mobile-app attacks)
+		5. Perform a vulnerability analysis (deeply investigate potential vulnerabilities)
+		6. Conduct attack modeling (creating attack tree and maps vulnerabilities)
+		7. Analyze risk and impact ( analyze all collected data and make risk management recommendations)
+		
+		
+		
+
+
+COURSE 5: Detection and Response 
+	Module 1: Introduction to detection and incident response
+		Incident lifecycle frameworks
+		NIST CSF last three stages
+		Incident - 
+			Event - An observable occurrence on a network, system or device
+			5 steps of an incident:
+				- Who triggered the incident
+				- What happened 
+				- When the incident took place 
+				- Where the incident took place
+				- Why the incident occurred
+			Incident handler's journal - Form of documentation
+			
+		Computer security incident response teams (CSIRT) - Group that is trained in incident management and response 
+			Command - appropriate leadership
+			Control -manage technical aspects during incident response
+			Communication - keeping stakeholders informed
+		Roles in CSIRT:
+			- Security analyst
+			- Technical lead
+			- Incident coordinator
+		Security operations center (SOC) - unit dedicated to monitoring networks, systems and devices for security threats or attacks. Exists in or without CSIRT.
+			SOC organization tier L's:
+				- SOC tier 1 analyst (monitoring reviewing, prioritizing alerts; creating alerts tickets; escalating alerts to tier 2 and tier 3)
+				- SOC tier 2 analyst (receiving tickets from L1; configuring and refining security tools; reporting to SOC led)
+				- SOC leads tier 3 (managing the operations of their team; performing advanced detection techniques; reporting to SOC managers)
+				- SOC managers (hiring, training; creating performance metrics; developing reports related incidents, compliance and auditing; communicating with executive management)
+			
+			Elements of security plan: policies, standards, procedures
+			Incident response plan - document that outlines procedures to take in each step of incident
+			Elements of an incident plan:
+				- Incident response procedures
+				- System information
+				- Other ducuments
+				
+		Incident response tools
+		Tool types:
+			- Detection and management tools
+			- Documentation tools
+			- Investigative tools
+			
+		Documentation - any form of recorded content
+		
+		Intrusion detection system (IDS) (true positive, true negative, false positive, false negative)
+		Intrusion prevention system (IPS)
+		Endpoint detection and response (EDR) - monitors and endpoint for malicious activity. Endpoint is any device connected on a network. Perform behavioral analysis. Uses AI and machine learning.
+			IDS and IPS tools: snort, zeek, kismet, sagan, suricata
+		
+		SIEM - a application that collects and analyzes and report log data
+		SIEM process:
+			1. Collect and aggregate data (logs, record from ids or ips firewalls apps and more)
+			2. Normalize data
+			3. Analyze data
+			
+		April 3 11:01:21 server sshd[1088]: Failed password for user nuhara from 218.124.14.105 port 5023
+
+		In a parsed format, the fields and values are extracted and paired making them easier to read and interpret:
+			host = server
+			process = sshd
+			source_user = nuhara
+			source ip = 218.124.14.105
+			source port = 5023
+			
+		SOAR - collection of applications, tools, and workflows that uses automation to respond to security events
+		
+
+MODULE 2: Monitoring and analysis
+	Network traffic  - The amount of data that moves across a network	
+	Network data - Data that's been transmitted between devices on a network
+	
+	Indicators of compromise (IOC) - Observable evidence that suggests signs of a potential security incident	
+	
+	Data exfiltration - Unauthorized transmission of data from a system
+	Defensive measures:
+		1. Prevent attacker access (use MFA)
+		2. Monitor network activity
+		3. Protect assets
+		4. Detect and stop the exfiltration
+		
+	Network protocol analyzer (packet sniffer) -  A tool designed to capture and analyze data traffic in network
+	Packet capture (P-cap) - A file containing data packets intercepted from an interface or network
+		
+	Version - what version is being used IPv4 or IPv6
+	IPv4
+		IHL - internet header length -  length of ip header and some options
+		ToS - type of service -  if certain packets should be treated with special care
+		Total Length - length of entire packet
+		Identification/Flags/Fragment Offset - deal with fragmentation; broken up into chunks
+		Time To Live - how long can packet live before its dropped, without this packet can loop thru routers endlessly
+		Protocol - protocol used with value (tcp is presented with 6)	
+		Header Checksum - if any errors occurred in header
+		Source Adress .. 
+		Destination Adress .. 
+		Options - not required and used to network trouble shooting
+		
+	IPv6
+		Version - indicates the IP version
+		Traffic Class - Provides information about packets 
+		Flow Label - Indicates the packets of flow. A flow is squence of packets sent from a specific source.
+		Payload Length - Length of data portion of the packet.
+		Next Header - Type of header that follows the ipv4 header such as tcp
+		Hop Limit - how can packet travel in a network
+		Source Address
+		Destination Adress
+		
+	tcpdump
+	
+	sudo tcpdump [-i interface]  [option(s)]  [expression(s)]
+	
+	-i   -  capture network  (-i any will sniff traffic from all network interfaces on the system)
+	options(s)    -    further filter network traffic packets
+		-w    -    can write or save the sniffed network
+		-r    -    read packet capture 
+	
+	
+Module 3: Incident investigation and response
+	Analysis - Investigation and validation of alerts
+	
+	Threat hunting -  proactive searching for threats that are not detected by detection tools.
+	Threat intelligence - staying up to date with existing or emerging threats.
+	Cyber deception - techniques that deliberately deceive malicious actors.
+		Honeypots - system created to deceive, like client credit card information folder,  once actor tries to access it, security teams are alerted
+		
+		Indicators of compromise (IoCs) - observable evidence that suggests signs of a potential security incident. Who and what of an attack after its taken place.
+		Indicators of attack (IoA) -  series of observed events that indicate a real-time incident. Why and how of an ongoing or unknown attack.
+		
+		Pyramid of pain(picture)
+		
+		Crowdsourcing - practice of gathering information using public input and collaboration. Getting intel, ideas etc online from many people and organizations.
+			Virustotal.com - analyze files urls ip addresses 
+			https://urlscan.io/
+			https://bazaar.abuse.ch/verify-ua/
+			
+	Benefits of documentation: 
+		- Transparency
+		- Standardization
+		- Clarity
+	Chain of custody - The process of documenting evidence possession and control during an incident lifecycle
+	Broken chain of custody - Inconsistencies in collection and logging of evidence in the chain of custody
+	Chain of custody establishes:	integrity, reliability, accuracy	
+	
+	Types of playbooks:
+		1. Non-automated - requires step by step actions performed by analyst
+		2. Automated -  automate tasks in incidents response proccesses
+		3. Semi-automated - combination of two above
+		
+	Triage - the prioritizing of incidents according to their level of importance or urgency
+	Triage process:
+		1. Receive and assess (determine if its true positive)
+		2. Assign priority
+		3. Collect and analyze
+		
+	THIRD PHASE of NIST incident Reposnose Lifecycle:
+		Containment - The act of limiting and preventing additional damage caused by an incident(disconnecting device from the network)
+		Eradication -  the complete removal of the incident elements from all affected systems
+		Recovery - The process of returning affected systems back to normal operations
+		
+	FORTH PHASE NIST lifecycle:
+		Post-incident activity phase - The process of reviewing an incident to identify areas for improvement during incident handling
+		Final report - Documentation that provides a comprehensive review of an incident
+		
+		
+MODULE 4: Network traffic and logs using IDS and SIEM tools
+	Whats in module:
+		- logs, read and analyze logs
+		- Interpret signatures; IDS (using suricada)
+		- Search in SIEM tools (splunk, and chronicle)
+	
+	Log - a record of events that occur within an organizations systems
+	Log analysis - The process of examining logs to identify events of intrest
+	Log types:
+		- Network logs (routers, switches, proxies and firewalls)
+		- System logs (by operating systems)
+		- Application (software applications)
+		- Security logs (IDS IPS)
+		- Authentication (login attempts) 
+	Commonly used log formats:
+		- Syslog (protocol and log format; transports as protocol, as log it has header followed by structured data) - It has three sections: Header; structured data; and message; PORT 514 for plaintext logs, 6514 for encrypted logs
+		- JavaScript Object Notation (JSON)(simple and easy to read;store and transmit data; used in clouds; used to write data like logs)
+		- eXtensible Markup Language (XML)(language and a format used for storing and transmitting data)
+		- Comma separated Values (CSV)
+		- Common Event Format (CEF) - Separated |
+		
+	
+	Telemenry - the collection and transmission of data for analysis
+	Host-based intrusion detection system  - an aplication that monitors the activity of the host on which its installed
+	Network-based intrusion detection system - network traffic and network data 
+	Signature analysis - a detection method used to find events of intrest
+	
+	NIDS rules:
+		1. action - determines the action to take if the rule criteria is met(alet, pass or reject)
+		2. header - source and destination ip addresses, ports, protocols, traffic direction
+		3. rule option
+		
+	Suricata format type:
+		EVE JSON - Extensible Event Format JavaScript Object notation
+	Suricata log types:
+		- Alert logs
+		- Network telemetry logs
+		
+	SIEM
+	Search Processing language (SPL) - splunks query language
+	YARA-L - computer language used to create rules for seacrhing through ingested log data(google SecOps)
+		Types of search:
+			1. UDM search - unified data model (normalized data)
+			2. Raw log search (not normalized logs)
